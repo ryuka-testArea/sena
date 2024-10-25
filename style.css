@@ -2,7 +2,7 @@
 
 .bg{
     height: 100vh;
-    background-image: url("/img/3.jpg");
+    background-image: url("img/3.jpg");
     background-repeat: no-repeat;
     background-color: #494949;
     background-position: center;
