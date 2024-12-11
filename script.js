@@ -14,6 +14,7 @@ function dateDifference() {
     const minutes = Math.floor(diffMs / 60000);
     const hours = Math.floor(minutes / 60);
     const days = Math.floor(hours / 24);
+    const months = Math.floor(days/30);
     const weeks = Math.floor(days / 7);
     const years = Math.floor(days/365*10)/10
 
@@ -21,6 +22,7 @@ function dateDifference() {
         years,
         weeks,
         days,
+        months,
         hours: hours % 24,
         minutes: minutes % 60,
         second : second % 60,
@@ -37,6 +39,9 @@ gunID.innerHTML = `Seni
            ${result.years} Yil
         </h1>
 
+        <h1 >
+        ${result.months} Ay
+        </h1>
 
         <h1 >
            ${result.weeks} Hafta
@@ -44,12 +49,12 @@ gunID.innerHTML = `Seni
 
         <h1 >
             ${result.days} Gün
-        </h1>
-
-        <h1 >
-           ${result.hours} saat
-        </h1>
-
+            </h1>
+            
+            <h1 >
+            ${result.hours} saat
+            </h1>
+            
 
         <h1 >
               ${result.minutes} dakika
@@ -61,3 +66,4 @@ gunID.innerHTML = `Seni
 
         Boyunca Hergün Sevdim
 `
+console.log("Kurcalıyorsan eger 12 aralık 2024 saat 1 gibi yazdim bunu en son mesajımda yanlız kalmak istediğimi söylemiştim gercekten içime oturdu ilerde daha neler yapmazsın demen")
