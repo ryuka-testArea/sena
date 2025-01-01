@@ -2,7 +2,20 @@ var gunID = document.querySelector("#gun")
 var gunID = document.querySelector("#gun")
 var gunID = document.querySelector("#gun")
 
+// Resim dosyalarının isimlerini bir diziye ekleyin.
+const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]; // 'img' klasöründeki resim dosyaları
 
+// Rastgele bir resim seçme fonksiyonu
+function getRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return `img/${images[randomIndex]}`;
+}
+
+// .bg sınıfına sahip elementi seç
+const bgElement = document.querySelector('.bg');
+
+// Arka plan resmini rastgele belirle
+bgElement.style.backgroundImage = `url(${getRandomImage()})`;
 
 
 function dateDifference() {
@@ -65,4 +78,7 @@ gunID.innerHTML = `Seni
         </h1>
 
         Boyunca Hergün Sevdim
+        <br>
+        İyiki Varsin Prensesim
 `
+console.log("Kurcalıyorsan eger 12 aralık 2024 saat 1 gibi yazdim bunu en son mesajımda yanlız kalmak istediğimi söylemiştim gercekten içime oturdu ilerde daha neler yapmazsın demen")
