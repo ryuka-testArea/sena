@@ -66,4 +66,3 @@ gunID.innerHTML = `Seni
 
         Boyunca Hergün Sevdim
 `
-console.log("Kurcalıyorsan eger 12 aralık 2024 saat 1 gibi yazdim bunu en son mesajımda yanlız kalmak istediğimi söylemiştim gercekten içime oturdu ilerde daha neler yapmazsın demen")
