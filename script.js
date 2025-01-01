@@ -80,5 +80,5 @@ gunID.innerHTML = `Seni
         Boyunca Hergün Sevdim
         <br>
         İyiki Varsin Prensesim
-`
-console.log("Kurcalıyorsan eger 12 aralık 2024 saat 1 gibi yazdim bunu en son mesajımda yanlız kalmak istediğimi söylemiştim gercekten içime oturdu ilerde daha neler yapmazsın demen")
+`    
+console.log("Kurcalıyorsan eger Seni KOCCCCCCCCCCCCCCCCCCCCCCCAMANN SEVİYORUM HAYATIMIN ANLAMİSİN PRENSESİM BENİM ")
