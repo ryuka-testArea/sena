@@ -2,6 +2,22 @@ var gunID = document.querySelector("#gun")
 var gunID = document.querySelector("#gun")
 var gunID = document.querySelector("#gun")
 
+
+var reload = document.querySelector("#reload")
+
+reload.addEventListener("click",Reload)
+
+function Reload(){  
+    
+    location.reload()
+    console.log("Sayfa Yenilendi ?")
+}
+
+
+
+
+
+
 // Resim dosyalarının isimlerini bir diziye ekleyin.
 const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]; // 'img' klasöründeki resim dosyaları
 
