@@ -1,30 +1,84 @@
+/* Genel ayarlar */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    height: 100%;
+    background-color: #000;
+}
 
-
-.bg{
-    height: 100vh;
-    background-image: url("img/2.jpg");
+/* Arka plan */
+.bg-wrapper {
+    min-height: 100vh;
+    background-image: url("img/2.jpg"); /* rastgele değişecek */
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-color: #494949;
-    
-    background-position: center;
-    color: white;  
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-start;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    backdrop-filter: none; /* Arka plan net */
+    color: white;
+    text-shadow: 0 1px 3px black;
+    padding: 2rem;
 }
 
-.text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70px;
-    background-color: #494949;
-    padding: 20px;
-    border-radius: 18px;
-    opacity: 0.7;
-
+/* Başlık */
+.title {
+    font-size: 3rem;
+    color: #ffc0cb;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.text .btn{
-    color: blueviolet;
-    opacity: 1 !important;
-    background-color: azure;
+/* Cam kutu efekti sadece yazı kutusuna */
+.glass-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Zaman yazısı */
+.date-text {
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* Buton */
+.btn-custom {
+    background-color: #fff;
+    color: #6a0dad;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    transition: 0.3s ease;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn-custom:hover {
+    background-color: #f3e5f5;
+    transform: scale(1.05);
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive ayarlar */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .date-text {
+        font-size: 1.3rem;
+    }
+
+    .glass-box {
+        padding: 1.5rem;
+    }
 }
